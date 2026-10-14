@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Recording</title>
+    <link rel="icon" href="../images/favicon.webp" type="image/webp">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<h1>Recording</h1>
+<div class="controls">
+    <button id="startBtn">Start Rec</button>
+    <button id="stopBtn" disabled>Stop Rec</button>
+    <button id="resetBtn" disabled>Reset</button>
+    <button id="playBtn" disabled>Play Result</button>
+    <button id="stopPlaybackBtn" disabled>Stop Playing Result</button>
+</div>
+
+<canvas id="waveform" width="600" height="100"></canvas>
+
+<div class="details">
+    <h3>Використані фічі:</h3>
+    <p>
+        <strong>AudioContext</strong> - для створення аудіо-контексту та обробки аудіо.
+    </p>
+    <p>
+        <strong>getUserMedia()</strong> - для доступу до мікрофона користувача.
+    </p>
+    <p>
+        <strong>ScriptProcessorNode</strong> - для обробки аудіо-даних та відображення форми хвилі в режимі реального часу.
+    </p>
+</div>
+<script src="script.js"></script>
+</body>
+</html>

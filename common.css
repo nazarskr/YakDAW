@@ -1,0 +1,41 @@
+body {
+    --main-color: #333333;
+    --background-color: #f5f5f5;
+    --text-color: #666666;
+    --hover-text-color: #000000;
+
+    color: var(--main-color);
+    background-color: var(--background-color);
+    font-family: "Courier New", Courier, monospace;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h1 {
+    font-size: 50px;
+    font-weight: normal;
+    padding-top: 5vh;
+    color: var(--main-color);
+}
+
+.details {
+    text-align: left;
+    width: 500px;
+    padding: 0 10px;
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    border: 1px dashed var(--main-color);
+    font-size: 14px;
+}
+
+.details h3 {
+    text-align: center;
+}

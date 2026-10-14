@@ -1,0 +1,93 @@
+@import '../common.css';
+
+.controls {
+    margin: 20px;
+}
+
+.piano {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    width: max-content;
+    margin: 20px auto;
+    padding: 20px;
+}
+
+.key {
+    position: relative;
+    width: 40px;
+    height: 180px;
+    margin: 2px;
+    border: 1px solid #000;
+    border-radius: 5px;
+    background-color: #fff;
+    box-shadow: 0px 4px 5px rgba(0, 0, 0, 0.2);
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    cursor: pointer;
+    transition: background-color 0.1s ease, box-shadow 0.1s ease;
+}
+
+.key.black {
+    width: 30px;
+    height: 120px;
+    margin-left: -20px;
+    margin-right: -20px;
+    background-color: #000;
+    z-index: 1;
+    color: #fff;
+    border-radius: 0 0 5px 5px;
+}
+
+.key.black:active,
+.key.black.active {
+    background-color: #444;
+    box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.5);
+}
+
+.key.white:active,
+.key.white.active {
+    background-color: #ccc;
+    box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.5);
+}
+
+.key-label {
+    font-size: 14px;
+    padding-bottom: 5px;
+}
+
+.key.white {
+    background-color: #fff;
+}
+
+.key.white:active,
+.key.white.active {
+    background-color: #f0f0f0;
+}
+
+.key.black {
+    background-color: #000;
+}
+
+.key.black:active,
+.key.black.active {
+    background-color: #333;
+}
+
+/* Відступи для чорних клавіш */
+.key.black[data-note="49"], /* C#3 */
+.key.black[data-note="51"], /* D#3 */
+.key.black[data-note="54"], /* F#3 */
+.key.black[data-note="56"], /* G#3 */
+.key.black[data-note="58"], /* A#3 */
+.key.black[data-note="61"], /* C#4 */
+.key.black[data-note="63"], /* D#4 */
+.key.black[data-note="66"], /* F#4 */
+.key.black[data-note="68"], /* G#4 */
+.key.black[data-note="70"]  /* A#4 */ {
+    margin-left: -15px;
+    margin-right: -15px;
+}
+
+

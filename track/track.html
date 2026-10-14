@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Track</title>
+    <link rel="icon" href="../images/favicon.webp" type="image/webp">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<h1>Track</h1>
+<div class="container">
+    <div id="drop-area">
+        Drop audio file here
+    </div>
+
+    <div id="waveform">
+        <canvas id="waveform-canvas"></canvas>
+        <div id="progress-line"></div>
+    </div>
+
+    <div class="controls">
+        <button id="play">Play</button>
+        <button id="pause">Pause</button>
+        <button id="stop">Stop</button>
+        <button id="reset">Reset</button>
+    </div>
+</div>
+<div class="details">
+    <h3>Використані фічі:</h3>
+    <p>
+        <strong>AudioContext</strong>: Створює контекст для управління аудіо, його відтворенням і зупинкою.
+    </p>
+    <p>
+        <strong>AnalyserNode</strong>: Використовується для отримання даних про аудіо (амплітуду, частоти) та для візуалізації waveforms.
+    </p>
+    <p>
+        <strong>BufferSourceNode</strong>: Надає можливість керувати буфером аудіо, дозволяючи почати або зупинити трек у будь-який момент.
+    </p>
+</div>
+<script src="script.js"></script>
+</body>
+</html>

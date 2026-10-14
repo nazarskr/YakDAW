@@ -1,0 +1,90 @@
+@import "common.css";
+
+.menu a {
+    position: absolute;
+    font-size: 18px;
+    color: var(--text-color);
+    text-decoration: none;
+    padding: 5px;
+    margin: 0;
+}
+
+.menu a:hover {
+    color: var(--hover-text-color);
+    animation: shake 0.5s infinite;
+}
+
+.menu a:nth-child(1) {
+    top: 20%;
+    left: 10%;
+}
+.menu a:nth-child(2) {
+    top: 30%;
+    left: 50%;
+}
+.menu a:nth-child(3) {
+    top: 40%;
+    left: 20%;
+}
+.menu a:nth-child(4) {
+    top: 50%;
+    left: 70%;
+}
+.menu a:nth-child(5) {
+    top: 60%;
+    left: 30%;
+}
+.menu a:nth-child(6) {
+    top: 20%;
+    left: 80%;
+}
+.menu a:nth-child(7) {
+    top: 70%;
+    left: 15%;
+}
+.menu a:nth-child(8) {
+    top: 35%;
+    left: 65%;
+}
+.menu a:nth-child(9) {
+    top: 80%;
+    left: 45%;
+}
+.menu a:nth-child(10) {
+    top: 90%;
+    left: 25%;
+}
+.menu a:nth-child(11) {
+    top: 30%;
+    left: 80%;
+}
+.menu a:nth-child(12) {
+    top: 70%;
+    left: 75%;
+}
+.menu a:nth-child(13) {
+    top: 65%;
+    left: 65%;
+}
+.menu a:nth-child(14) {
+    top: 15%;
+    left: 45%;
+}
+.menu a:nth-child(15) {
+    top: 50%;
+    left: 50%;
+}
+
+@keyframes shake {
+    0% { transform: translate(1px, 1px) rotate(0deg); }
+    10% { transform: translate(-1px, -2px) rotate(-1deg); }
+    20% { transform: translate(-3px, 0px) rotate(1deg); }
+    30% { transform: translate(3px, 2px) rotate(0deg); }
+    40% { transform: translate(1px, -1px) rotate(1deg); }
+    50% { transform: translate(-1px, 2px) rotate(-1deg); }
+    60% { transform: translate(-3px, 1px) rotate(0deg); }
+    70% { transform: translate(3px, 1px) rotate(-1deg); }
+    80% { transform: translate(-1px, -1px) rotate(1deg); }
+    90% { transform: translate(1px, 2px) rotate(0deg); }
+    100% { transform: translate(1px, -2px) rotate(-1deg); }
+}

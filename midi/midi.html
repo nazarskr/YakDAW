@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>MIDI</title>
+    <link rel="icon" href="../images/favicon.webp" type="image/webp">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<h1>MIDI</h1>
+
+<div class="controls">
+    <label for="sustain">Sustain</label>
+    <input type="checkbox" id="sustain">
+</div>
+
+<div class="piano">
+    <!-- Перша октава -->
+    <div class="key white" data-note="48" id="C3">C3</div>
+    <div class="key black" data-note="49" id="C#3"></div>
+    <div class="key white" data-note="50" id="D3">D3</div>
+    <div class="key black" data-note="51" id="D#3"></div>
+    <div class="key white" data-note="52" id="E3">E3</div>
+    <div class="key white" data-note="53" id="F3">F3</div>
+    <div class="key black" data-note="54" id="F#3"></div>
+    <div class="key white" data-note="55" id="G3">G3</div>
+    <div class="key black" data-note="56" id="G#3"></div>
+    <div class="key white" data-note="57" id="A3">A3</div>
+    <div class="key black" data-note="58" id="A#3"></div>
+    <div class="key white" data-note="59" id="B3">B3</div>
+
+    <!-- Друга октава -->
+    <div class="key white" data-note="60" id="C4">C4</div>
+    <div class="key black" data-note="61" id="C#4"></div>
+    <div class="key white" data-note="62" id="D4">D4</div>
+    <div class="key black" data-note="63" id="D#4"></div>
+    <div class="key white" data-note="64" id="E4">E4</div>
+    <div class="key white" data-note="65" id="F4">F4</div>
+    <div class="key black" data-note="66" id="F#4"></div>
+    <div class="key white" data-note="67" id="G4">G4</div>
+    <div class="key black" data-note="68" id="G#4"></div>
+    <div class="key white" data-note="69" id="A4">A4</div>
+    <div class="key black" data-note="70" id="A#4"></div>
+    <div class="key white" data-note="71" id="B4">B4</div>
+</div>
+
+<div class="details">
+    <h3>Використані фічі:</h3>
+    <p>
+        <strong>AudioContext</strong>: Створює аудіо-контекст, що використовується для управління аудіо-операціями, включаючи генерацію та відтворення звуків.
+    </p>
+    <p>
+        <strong>OscillatorNode</strong>: Генерує звуки синусоїдальної форми, які використовуються для відтворення нот фортепіано, кожна з яких відповідає певній частоті.
+    </p>
+    <p>
+        <strong>GainNode</strong>: Контролює рівень гучності аудіо-сигналу. Використовується для плавного затухання звуку після натискання клавіші.
+    </p>
+    <p>
+        <strong>MIDI Access API</strong>: Дозволяє взаємодіяти з зовнішніми MIDI-клавіатурами для відтворення звуків і візуалізації натискань на відповідні клавіші.
+    </p>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

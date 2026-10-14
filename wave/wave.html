@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Wave Form</title>
+    <link rel="icon" href="../images/favicon.webp" type="image/webp">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<h1>Wave Form</h1>
+<div class="container">
+    <div class="wave-controls">
+        <label for="frequency-slider">Frequency:</label>
+        <input type="range" id="frequency-slider" min="50" max="1000" value="440">
+        <span id="frequency-value">440 Hz</span>
+    </div>
+
+    <div class="volume-control">
+        <label for="volume-slider">Volume:</label>
+        <input type="range" id="volume-slider" min="0" max="1" step="0.01" value="0.5">
+        <span id="volume-value">50%</span>
+    </div>
+
+    <div class="wave-buttons">
+        <button data-waveform="sine">Sine</button>
+        <button data-waveform="triangle">Triangle</button>
+        <button data-waveform="square">Square</button>
+        <button data-waveform="sawtooth">Sawtooth</button>
+        <button id="stop-button">Stop</button>
+    </div>
+
+    <div class="wave-display">
+        <canvas id="waveform-canvas"></canvas>
+        <div id="waveform-name">Select a waveform</div>
+    </div>
+</div>
+<div class="details">
+    <h3>Використані фічі:</h3>
+    <p>
+        <strong>AudioContext</strong>: Створює контекст для управління аудіо, його відтворенням і зупинкою.
+    </p>
+    <p>
+        <strong>OscillatorNode</strong>: Генерація різних форм хвиль (синусоїда, трикутна, квадратна, пилкоподібна).
+    </p>
+    <p>
+        <strong>GainNode</strong>: Контроль гучності звуку.
+    </p>
+    <p>
+        <strong>AnalyserNode</strong>: Візуалізація форми хвилі в реальному часі.
+    </p>
+</div>
+<script src="script.js"></script>
+</body>
+</html>

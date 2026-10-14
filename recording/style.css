@@ -1,0 +1,19 @@
+@import '../common.css';
+
+.controls {
+    display: flex;
+    gap: 10px;
+}
+
+button {
+    padding: 10px 20px;
+    border: 1px solid #333;
+    background-color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+canvas {
+    margin-top: 20px;
+    border: 1px solid #333;
+}

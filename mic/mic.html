@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Microphone</title>
+    <link rel="icon" href="../images/favicon.webp" type="image/webp">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<h1>Microphone</h1>
+<div class="container">
+    <button id="start">Start</button>
+    <button id="stop" disabled>Stop</button>
+    <canvas id="waveform"></canvas>
+</div>
+
+<div class="details">
+    <h3>Використані фічі:</h3>
+    <p>
+        <strong>navigator.mediaDevices.getUserMedia()</strong>: надає доступ до мікрофона користувача, що дозволяє захоплювати аудіо в реальному часі.
+    </p>
+    <p>
+        <strong>AudioContext</strong>: Створює контекст для управління аудіо, його відтворенням і зупинкою.
+    </p>
+    <p>
+        <strong>AnalyserNode</strong>: Використовується для отримання даних про аудіо (амплітуду, частоти) та для візуалізації waveforms.
+    </p>
+    <p>
+        <strong>BufferSourceNode</strong>: Надає можливість керувати буфером аудіо, дозволяючи почати або зупинити трек у будь-який момент.
+    </p>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

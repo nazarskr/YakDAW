@@ -1,0 +1,59 @@
+@import "../common.css";
+
+.container {
+    width: 80%;
+    text-align: center;
+    border: 1px solid #000;
+    padding: 20px;
+    background-color: #fff;
+}
+
+#drop-area {
+    border: 2px dashed #000;
+    padding: 50px;
+    margin-bottom: 20px;
+    cursor: pointer;
+    color: #333;
+}
+
+.controls {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.controls button {
+    font-family: "Courier New", monospace;
+    background: none;
+    border: 1px solid #000;
+    color: #000;
+    margin: 0 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.controls button:hover {
+    background-color: #000;
+    color: #fff;
+}
+
+#waveform {
+    height: 150px;
+    background: #f0f0f0;
+    border: 1px solid #000;
+    display: none;
+    position: relative;
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+#progress-line {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 2px;
+    background-color: red;
+    display: none;
+}

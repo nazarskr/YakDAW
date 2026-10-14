@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Equalizer</title>
+    <link rel="icon" href="../images/favicon.webp" type="image/webp">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<h1>Equalizer</h1>
+<div class="container">
+    <div id="drop-zone">Drop your audio file here</div>
+    <canvas id="waveform"></canvas>
+
+    <div class="controls">
+        <button id="play">Play</button>
+        <button id="pause">Pause</button>
+        <button id="stop">Stop</button>
+        <button id="reset">Reset</button>
+    </div>
+
+    <div class="equalizer">
+        <label>Low Frequency</label>
+        <input type="range" id="low" min="-40" max="40" value="0">
+        <label>Mid Frequency</label>
+        <input type="range" id="mid" min="-40" max="40" value="0">
+        <label>High Frequency</label>
+        <input type="range" id="high" min="-40" max="40" value="0">
+    </div>
+</div>
+<div class="details">
+    <h3>Використані фічі:</h3>
+    <p>
+        <strong>AudioContext</strong>: Створює аудіо-контекст для управління всіма аудіо-операціями, такими як завантаження, відтворення та обробка звукових сигналів.
+    </p>
+    <p>
+        <strong>AudioBufferSourceNode</strong>: Відповідає за завантаження аудіо-файлів у контекст та їх відтворення. Дозволяє працювати з аудіо у форматах WAV і MP3.
+    </p>
+    <p>
+        <strong>BiquadFilterNode</strong>: Використовується для налаштування низьких, середніх та високих частот. Це ключовий елемент для створення трьохсмугового еквалайзера.
+    </p>
+    <p>
+        <strong>GainNode</strong>: Регулює загальний рівень гучності треку, що дозволяє плавно змінювати інтенсивність звуку.
+    </p>
+    <p>
+        <strong>AnalyserNode</strong>: Використовується для візуалізації аудіо-сигналу у вигляді хвильової форми, що показує амплітуду треку на полотні (canvas).
+    </p>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
